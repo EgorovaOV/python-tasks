@@ -3,12 +3,14 @@
 #[ 1, 2, 6, 24 ]
 print('enter n')
 n = int(input())
+
 a = [0]*n
 a[0] = 1
 for n in range(1,n):
        i = n
        a[i] = (a[i-1]*(n+1))
-      
+       
 print(a)
+
 
        
