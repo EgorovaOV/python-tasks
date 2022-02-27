@@ -31,7 +31,6 @@ else:
             if i == j:
                 c.append(i)
                 break
-print(c)
 p = 0
 pr = 1
 while p in range(len(c)):
