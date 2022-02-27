@@ -1,7 +1,7 @@
 #Найти НОК двух чисел
-y = 164
-x = 14
-print('num', x,'num2', y)
+y = 36
+x = 72
+print('Y', y,'X', x)
 def f(a):
    b =[]
    i = 2
@@ -14,23 +14,21 @@ def f(a):
        if a != 1:
             b.append(a)
    return(b)
-print('prime factors of num1', f(y))
-print('prime factors of num2', f(x))
+print('prime factors of Y', f(y))
+print('prime factors of X', f(x))
 a = f(x)
 b = f(y)
 c = []
-if (all(n in a for n in b)):
-    c = a
-elif (all(n in b for n in a)):
-    c = b
-else:
-    for i in a:
-        if i in c:
-            continue
-        for j in b:
-            if i == j:
-                c.append(i)
-                break
+i =0
+j = 0
+for i in a:
+    for j in b:
+       if i == j:
+           if i in c:
+              continue
+           else:
+              c.append(i)
+print(c)
 p = 0
 pr = 1
 while p in range(len(c)):
