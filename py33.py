@@ -9,10 +9,11 @@ b = random.randint(0, 100)
 print(b)
 c = random.randint(0, 100)
 print(c)
-#pip install sympy
-#from sympy import *
+
+from sympy import *
 x = Symbol('x')
 d = a * x **k + b * x + c
 print(d)
+print(type(d))
 with open('file.txt', 'w') as d:
-     d.write('a * x **k + b * x + c')
+     d.write(d)
